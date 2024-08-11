@@ -17,7 +17,7 @@ app.use("/api/user", userRouter);
 app.use("/api/order", orderRouter); // Use orderRouter
 
 app.get("/", (req, res) => {
-  res.send(<h1>Welcome to Foodie Backend</h1>);
+  res.send("<h1> Welcome to Foodie Backend");
 });
 
 app.listen(port, () => {
