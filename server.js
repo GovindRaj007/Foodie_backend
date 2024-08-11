@@ -6,7 +6,7 @@ import orderRouter from "./routes/order.js"; // Import orderRouter
 import 'dotenv/config';
 
 const app = express();
-const port = 4000;
+const port =process.env.PORT || 4000;
 
 app.use(express.json());
 app.use(cors());
@@ -17,7 +17,7 @@ app.use("/api/user", userRouter);
 app.use("/api/order", orderRouter); // Use orderRouter
 
 app.get("/", (req, res) => {
-  res.send("API Working");
+  res.send(<h1>Welcome to Foodie Backend</h1>);
 });
 
 app.listen(port, () => {
