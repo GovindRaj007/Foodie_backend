@@ -13,6 +13,12 @@ app.use(cors());
 
 connectDB();
 
+
+// Serve static files from uploads directory
+import path from "path";
+const __dirname = path.resolve();
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
 app.use("/api/user", userRouter);
 app.use("/api/order", orderRouter); // Use orderRouter
 
