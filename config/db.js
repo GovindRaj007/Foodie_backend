@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-const uri = 'mongodb+srv://suryavenkat:Surya2012138@cluster0.xirij.mongodb.net/customer?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://Foodie-admin:Milky%408599@foodie-app.pvr8xxt.mongodb.net/?retryWrites=true&w=majority&appName=Foodie-app';
 
  export const connectDB = async () => {
         await mongoose.connect(`${uri}`)
